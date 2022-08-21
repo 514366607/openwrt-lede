@@ -13,7 +13,6 @@
 + [sundaqiang/openwrt-packages (github.com)](https://github.com/sundaqiang/openwrt-packages)
 + [fw876/helloworld (github.com)](https://github.com/fw876/helloworld)
 + [sgpublic/openwrt-packages (github.com)](https://github.com/sgpublic/openwrt-packages)
-+ [sgpublic/packages-little-paimon (github.com)](https://github.com/sgpublic/packages-little-paimon)
 
 ## 主题
 
@@ -34,7 +33,6 @@
   + Simple_Obfs
   + V2ray_Plugin
   + Xray
-+ LittlePaimon
 + qBittorrent-Enhanced-Edition
 
 ## 管理页
