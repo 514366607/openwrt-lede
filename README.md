@@ -14,6 +14,10 @@
 + [fw876/helloworld (github.com)](https://github.com/fw876/helloworld)
 + [sgpublic/openwrt-packages (github.com)](https://github.com/sgpublic/openwrt-packages)
 
+## 驱动
+
++ RTL8111E：[BROBIRD/openwrt-r8168 (github.com)](https://github.com/BROBIRD/openwrt-r8168.git)
+
 ## 主题
 
 [jerrykuku/luci-theme-argon: Argon is a clean HTML5 theme for OpenWrt LuCI. Users may setup their own favorite logins, including beautiful pics and customized mp4 videos. (github.com)](https://github.com/jerrykuku/luci-theme-argon)
@@ -34,6 +38,7 @@
   + V2ray_Plugin
   + Xray
 + qBittorrent-Enhanced-Edition
++ filebrowser
 
 ## 管理页
 

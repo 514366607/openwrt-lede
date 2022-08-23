@@ -30,18 +30,20 @@ git_clone() {
 git_clone https://github.com/fw876/helloworld.git package/helloworld
 # 添加软件源 sundaqiang/openwrt-packages
 git_clone https://github.com/sundaqiang/openwrt-packages.git package/sundaqiang
+# 为 RTL8111e 添加驱动 BROBIRD/openwrt-r816
+git_clone https://github.com/BROBIRD/openwrt-r8168.git package/BROBIRD/r8168
 
 if [ "$1" == "--local" ]; then
   # 本地拉取依赖
   rm -rf package/sgpublic && mkdir -p package/sgpublic
   cp -r /mnt/e/Documents/OpenWrt/openwrt-packages/* package/sgpublic
-  rm -rf package/little-paimon && mkdir -p package/little-paimon
-  cp -r /mnt/e/Documents/OpenWrt/packages-little-paimon/* package/little-paimon
+  # rm -rf package/little-paimon && mkdir -p package/little-paimon
+  # cp -r /mnt/e/Documents/OpenWrt/packages-little-paimon/* package/little-paimon
 else
   # 添加软件源 sgpublic/openwrt-packages
   git_clone https://github.com/sgpublic/openwrt-packages.git package/sgpublic
-  # 添加软件源 sgpublic/packages-little-paimon
-  git_clone https://github.com/sgpublic/packages-little-paimon.git package/little-paimon
+  # # 添加软件源 sgpublic/packages-little-paimon
+  # git_clone https://github.com/sgpublic/packages-little-paimon.git package/little-paimon
 fi
 
 # 拉取主题 luci-theme-argon
