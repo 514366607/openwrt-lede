@@ -28,8 +28,6 @@ git_clone() {
 
 # 添加软件源 fw876/helloworld
 git_clone https://github.com/fw876/helloworld.git package/helloworld
-# 添加软件源 sundaqiang/openwrt-packages
-git_clone https://github.com/sundaqiang/openwrt-packages.git package/sundaqiang
 # 为 RTL8111e 添加驱动 BROBIRD/openwrt-r816
 git_clone https://github.com/BROBIRD/openwrt-r8168.git package/BROBIRD/r8168
 
