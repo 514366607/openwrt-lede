@@ -164,11 +164,12 @@ jobs:
         retain_days: 1
         keep_minimum_runs: 1
 
-    - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@v0.2.0
-      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-      with:
-        keep_latest: 3
-        delete_tags: true
+    - name: Remove old release
+      uses: sgpublic/delete-release-action@v1.0
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      with:
+        release-drop: true
+        release-keep-count: 2
+        pre-release-drop: true
+        pre-release-keep-count: -1
