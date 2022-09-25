@@ -6,17 +6,12 @@
 
 ## 适用于
 
-+ x86_64
++ r2s
 
 ## 插件源
 
 + [sundaqiang/openwrt-packages (github.com)](https://github.com/sundaqiang/openwrt-packages)
-+ [fw876/helloworld (github.com)](https://github.com/fw876/helloworld)
 + [sgpublic/openwrt-packages (github.com)](https://github.com/sgpublic/openwrt-packages)
-
-## 驱动
-
-+ RTL8111E：[BROBIRD/openwrt-r8168 (github.com)](https://github.com/BROBIRD/openwrt-r8168.git)
 
 ## 主题
 
@@ -26,8 +21,6 @@
 
 ## 插件
 
-+ luci-app-wolplus
-+ luci-app-samba4
 + luci-app-ssr-plus
   + NaiveProxy
   + Shadowsocks_Libev_Client
@@ -37,8 +30,6 @@
   + Simple_Obfs
   + V2ray_Plugin
   + Xray
-+ qBittorrent-Enhanced-Edition
-+ filebrowser
 
 ## 管理页
 
