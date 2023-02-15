@@ -138,7 +138,7 @@ Download_Package() {
   fi
   mkdir -p $OUTPUT_DIR
   execute "cp ./.config $OUTPUT_DIR/"
-  runing "make download -j$THREAD"
+  runing "make download -j2"
   make download -j$THREAD
   execute "rm -rf /tmp/openwrt/download/go-mod-cache"
   runing "find /tmp/openwrt/download -size -1024c -exec ls -l {} \;"
