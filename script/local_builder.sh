@@ -5,11 +5,11 @@ REPO_URL='https://github.com/openwrt/openwrt.git'
 REPO_BRANCH='v22.03.3'
 GITHUB_REPOSITORY='SGPublic/openwrt-lede'
 GITHUB_ACTOR='SGPublic'
-CONFIG_FILE='/mnt/e/Documents/OpenWrt/openwrt-lede/origin.config'
-DIY_P1_SH='/mnt/e/Documents/OpenWrt/openwrt-lede/diy-part1.sh'
-DIY_P2_SH='/mnt/e/Documents/OpenWrt/openwrt-lede/diy-part2.sh'
+CONFIG_FILE='/mnt/core/document/OpenWrt/openwrt-lede/config/origin.config'
+DIY_P1_SH='/mnt/core/document/OpenWrt/openwrt-lede/script/diy-part1.sh'
+DIY_P2_SH='/mnt/core/document/OpenWrt/openwrt-lede/script/diy-part2.sh'
 THREAD=12
-OUTPUT_DIR='/mnt/e/Documents/OpenWrt/openwrt-lede/local'
+OUTPUT_DIR='/mnt/core/document/OpenWrt/openwrt-lede/local'
 
 declare -a _STEP_STACK=(
   Clone_Source_Code

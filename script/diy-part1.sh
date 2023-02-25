@@ -22,7 +22,7 @@ git_clone() {
     cd $path
   else
     mkdir -p "$2"
-    git clone $1 $2
+    git clone $1 --depth=1 $2
   fi
 }
 
@@ -30,11 +30,13 @@ git_clone() {
 git_clone https://github.com/fw876/helloworld.git package/helloworld
 # 添加软件源 sundaqiang/openwrt-packages
 git_clone https://github.com/sundaqiang/openwrt-packages.git package/sundaqiang
+# 添加软件源 vernesong/OpenClash
+git_clone https://github.com/vernesong/OpenClash package/openclash
 
 if [ "$1" == "--local" ]; then
   # 本地拉取依赖
   rm -rf package/sgpublic && mkdir -p package/sgpublic
-  cp -r /mnt/e/Documents/OpenWrt/openwrt-packages/* package/sgpublic
+  cp -r /mnt/core/document/OpenWrt/openwrt-packages/* package/sgpublic
   # rm -rf package/little-paimon && mkdir -p package/little-paimon
   # cp -r /mnt/e/Documents/OpenWrt/packages-little-paimon/* package/little-paimon
 else

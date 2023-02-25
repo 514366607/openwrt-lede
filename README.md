@@ -22,14 +22,9 @@
 ## 插件
 
 + luci-app-ssr-plus
-  + NaiveProxy
-  + Shadowsocks_Libev_Client
-  + Shadowsocks_Libev_Server
-  + ShadowsocksR_Libev_Client
-  + ShadowsocksR_Libev_Server
-  + Simple_Obfs
-  + V2ray_Plugin
-  + Xray
++ luci-app-wolplus
++ luci-app-openclash
++ luci-app-openvpn
 
 ## 管理页
 
