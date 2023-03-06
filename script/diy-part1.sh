@@ -50,3 +50,20 @@ fi
 git_clone https://github.com/jerrykuku/luci-theme-argon.git package/jerrykuku/luci-theme-argon
 # 拉取插件 luci-app-argon-config
 git_clone https://github.com/jerrykuku/luci-app-argon-config.git package/jerrykuku/luci-app-argon-config
+
+# 修改标准目录
+sed -i 's/$(TOPDIR)\/staging_dir/\/tmp\/openwrt\/staging_dir/g' rules.mk
+mkdir -p /tmp/openwrt/staging_dir
+ln -sf /tmp/openwrt/staging_dir staging_dir
+
+sed -i 's/$(TOPDIR)\/build_dir/\/tmp\/openwrt\/build_dir/g' rules.mk
+mkdir -p /tmp/openwrt/build_dir
+ln -sf /tmp/openwrt/build_dir build_dir
+
+mkdir -p /tmp/openwrt/binary
+ln -sf /tmp/openwrt/binary bin
+
+mkdir -p /tmp/openwrt/download
+mkdir -p /tmp/openwrt/mirror
+mkdir -p /tmp/openwrt/ccache
+mkdir -p /tmp/openwrt/log

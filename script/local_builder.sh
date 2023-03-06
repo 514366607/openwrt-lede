@@ -8,7 +8,7 @@ GITHUB_ACTOR='SGPublic'
 CONFIG_FILE='/mnt/core/document/OpenWrt/openwrt-lede/config/origin.config'
 DIY_P1_SH='/mnt/core/document/OpenWrt/openwrt-lede/script/diy-part1.sh'
 DIY_P2_SH='/mnt/core/document/OpenWrt/openwrt-lede/script/diy-part2.sh'
-THREAD=12
+THREAD=28
 OUTPUT_DIR='/mnt/core/document/OpenWrt/openwrt-lede/local'
 
 declare -a _STEP_STACK=(
@@ -43,9 +43,7 @@ main() {
   if [[ "$_need" =~ ^[yY]$ ]]; then
     execute "sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc"
     execute "sudo apt update -y"
-    execute "sudo apt upgrade -y"
-    # execute "sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-dev libssl-dev python3-distutils zlib1g-dev"
-    execute "sudo apt install $(curl -fsSL git.io/depends-ubuntu-2004) -y"
+    execute "sudo apt install build-essential clang flex bison g++ gawk gcc-multilib g++-multilib gettext git libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev file wget -y"
     execute "sudo apt clean"
   fi
 
